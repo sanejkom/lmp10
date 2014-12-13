@@ -3,13 +3,14 @@
 
 #include <stdio.h>
 
-typedef struct {
-		int n;
-		double *x;
-		double *f;
-		double *f1;
-		double *f2;
-		double *f3;
+typedef struct
+{
+	int n;
+	double *x;
+	double *f;
+	double *f1;
+	double *f2;
+	double *f3;
 } spline_t;
 
 int alloc_spl( spline_t *spl, int n );

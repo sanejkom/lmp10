@@ -3,10 +3,11 @@
 
 #include <stdio.h>
 
-typedef struct {
+typedef struct
+{
 	int rn;
-    int cn;
-    double *e;
+	int cn;
+	double *e;
 } matrix_t;
 
 matrix_t * make_matrix( int rn, int cn );
