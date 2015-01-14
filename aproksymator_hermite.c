@@ -17,7 +17,7 @@ double
 fi(double a, double b, int n, int i, double x)
 {
 	int j;
-	double f, pf;
+	double f, pf, tmp;
 	pf = 1;
 	f = 2 * x;
 
@@ -29,9 +29,10 @@ fi(double a, double b, int n, int i, double x)
 
 	for( j = 1; j < i; j++ )
 	{
-		pf = f;
-		f = f * 2 * x;
+		tmp = f;
+		f += f * 2 * x;
 		f -= 2 * j * pf;
+		pf = tmp;
 	}
 
 	return f;
