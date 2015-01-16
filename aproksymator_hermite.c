@@ -30,7 +30,7 @@ fi(double a, double b, int n, int i, double x)
 	for( j = 1; j < i; j++ )
 	{
 		tmp = f;
-		f += f * 2 * x;
+		f = f * 2 * x;
 		f -= 2 * j * pf;
 		pf = tmp;
 	}
